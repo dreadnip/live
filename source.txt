@@ -66,9 +66,7 @@
         }
 
         .source {
-            position: absolute;
-            min-height: 100vh;
-            width: 50%;
+            white-space: pre;
         }
 
         ::-moz-selection {
@@ -121,6 +119,10 @@
         </ul>
         <u>朴</u>
     </section>
-    <object class="source" type="text/html" data="source.txt"></object>
+    <object type="text/html"
+            data="index.html"
+            width="250"
+            height="200">>
+    </object>
 </body>
 </html>
