@@ -40,7 +40,8 @@
         }
 
         ul {
-            list-style: url(rice-balls.svg)
+            list-style: url(rice-balls.svg);
+            margin-left: 2rem;
         }
 
         ul li {
@@ -48,20 +49,22 @@
             margin-bottom: 1rem
         }
 
-        p {
+        main p {
             margin-bottom: 1rem;
         }
 
+        /* specifics */
         .update {
             color: red;
         }
 
         header, footer {
             display: flex;
+            position: relative;
         }
 
         footer {
-            background: url(soil.jpg);
+            padding: 2rem;
         }
 
         main {
@@ -69,12 +72,6 @@
             border: solid 1px black;
             padding: 3rem;
             max-width: 40rem;
-        }
-
-        .photo {
-            background: url(smol.jpg);
-            background-position: center;
-            background-size: cover
         }
 
         .source {
@@ -85,9 +82,9 @@
         }
 
         .take {
-            position: absolute;
+            position: fixed;
             right: 4rem;
-            text-transform: uppercase;
+            bottom: 4rem;
         }
 
         ::-moz-selection {
@@ -106,6 +103,24 @@
             body {
                 font-size: 1.25rem;
             }
+            main {
+                max-width: 100%;
+                padding: 3rem 1rem;
+            }
+            .take {
+                bottom: 1rem;
+                right: -3rem;
+                max-height: 10rem;
+            }
+
+            .source {
+                display: none;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto
+            }
         }
     </style>
 </head>
@@ -121,15 +136,16 @@
         <p>I'm passionate about building beautiful, performant and accessible websites, but also music, nature, climbing and literature</p>
         <p>Here's some things I like</p>
         <ul>
-            <li><a href="https://twitter.com/rabbit_isle_bot">https://twitter.com/rabbit_isle_bot</a></li>
-            <li><a href="https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau">https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau</a></li>
+            <li><a href="https://twitter.com/rabbit_isle_bot">rabbit_isle_bot</a></li>
+            <li><a href="https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau">face-a-quitter-le-chateau</a></li>
+            <li><a href="http://html.energy/">html.energy</a></li>
         </ul>
-        <u>朴</u>
         <img src="amelie.png" />
-        <p class="take">Take from here</br>Return to here</p>
     </main>
     <footer>
         <a href="https://github.com/dreadnip">https://github.com/dreadnip</a>
+        <u>朴</u>
+        <img class="take" src="torspeer.jpg"/>
     </footer>
     <object class="source" type="text/html" data="source.txt"></object>
 </body>
