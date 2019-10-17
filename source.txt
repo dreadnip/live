@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Sander - Home</title>
+    <title>ho-mpe-ji-zukuri  !</title>
     <meta name="description" content="">
     <meta name="author" content="Sander De la Marche">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,6 +65,10 @@
 
         footer {
             padding: 2rem;
+        }
+
+        footer > * + * {
+            margin-left: 1rem;
         }
 
         main {
@@ -130,10 +134,10 @@
         <p class="update">update: 17/10/2019 13:20</p>
     </header>
     <main>
-        <p>Hi my name is sander and I'm a web developer from ghent, belgium.</p>
-        <p>I currently work for an awesome company called <a href="https://sumocoders.be/">sumocoders</a> where I build web apps with PHP and Symfony</p>
-        <p>Before this i rode my bike through <a href="">Japan</a> and <a href="smol.jpg">hiked from Mexico to Canada</a></p>
-        <p>I'm passionate about building beautiful, performant and accessible websites, but also music, nature, climbing and literature</p>
+        <p>Hi my name is sander. I'm a web developer from ghent, belgium.</p>
+        <p>I currently work for an awesome company called <a href="https://sumocoders.be/">sumocoders</a> where I build web apps with PHP and Symfony.</p>
+        <p>Before this I rode my bike through <a href="">Japan</a> and <a href="smol.jpg">hiked from Mexico to Canada</a>.</p>
+        <p>I'm passionate about building beautiful, performant and accessible websites, but also music, nature, climbing and literature.</p>
         <p>Here's some things I like</p>
         <ul>
             <li><a href="https://twitter.com/rabbit_isle_bot">rabbit_isle_bot</a></li>
