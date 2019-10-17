@@ -17,26 +17,29 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: #212121;
             overflow-y: scroll;
             line-height: 1.5;
-            display: flex
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
-            line-height: 2rem;
-            margin-bottom: .5rem
+            background-color: #ff0;
+            position: relative;
+            top: 4rem;
+            left: 4rem;
+            flex: 1;
         }
 
-        u {
+        a {
             text-decoration: none;
-            background-color: #ff0
+            background-color: #ff0;
+            color: #212121;
         }
 
         ul {
-            margin: 4rem 2rem;
-            max-width: 35rem;
             list-style: url(rice-balls.svg)
         }
 
@@ -45,30 +48,41 @@
             margin-bottom: 1rem
         }
 
-        section {
-            height: calc(100vh - 4rem);
-            width: 50vw;
-            margin: 2rem
+        p {
+            margin-bottom: 1rem;
         }
 
-        .photo {
-            background: url(smol.jpg);
-            background-position: center;
-            background-size: cover
+        .update {
+            color: red;
         }
 
-        .copy {
+        header, footer {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-left: 0
+        }
+
+        main {
+            margin: 2rem;
+            border: solid 1px black;
+            padding: 3rem;
+            max-width: 40rem;
         }
 
         .source {
             position: absolute;
-            min-height: 100vh;
+            right: 0;
+            min-height: 150vh;
             width: 50%;
+        }
+
+        .take {
+            position: absolute;
+            right: 4rem;
+            color: #fff;
+            font-family: monospace;
+            padding: 5rem;
+            text-transform: uppercase;
+            background: url(soil.jpg);
+            background-size: cover;
         }
 
         ::-moz-selection {
@@ -80,47 +94,38 @@
         }
 
         @media(max-width:70rem) {
-            ul {
-                margin: 1rem .5rem
-            }
+
         }
 
         @media(max-width:50rem) {
             body {
                 font-size: 1.25rem;
-                flex-direction: column
-            }
-            section {
-                height: auto;
-                min-height: 20rem;
-                width: 100%
-            }
-            ul {
-                margin: 1rem 2rem 3rem 3rem
-            }
-            .photo {
-                background-position: bottom;
-                width: calc(100% - 4rem)
-            }
-            .copy {
-                margin-top: 0;
-                padding-bottom: 3rem
             }
         }
     </style>
 </head>
 <body>
-    <section class="photo"></section>
-    <section class="copy">
-        <h1>Sander De la Marche</h1>
+    <header>
+        <h1>sander</h1>
+        <p class="update">update: 17/10/2019 13:20</p>
+    </header>
+    <main>
+        <p>Hi my name is sander and I'm a web developer from ghent, belgium.</p>
+        <p>I currently work for an awesome company called <a href="https://sumocoders.be/">sumocoders</a> where I build web apps with PHP and Symfony</p>
+        <p>Before this i rode my bike through <a href="">Japan</a> and <a href="smol.jpg">hiked from Mexico to Canada</a></p>
+        <p>I'm passionate about building beautiful, performant and accessible websites, but also music, nature, climbing and literature</p>
+        <p>Here's some things I like</p>
         <ul>
-            <li>Full-stack web developer & aspiring mountain climber from <u>ghent, belgium</u></li>
-            <li>Passionate about building beautiful, performant and accessible websites</li>
-            <li>Always ready for some type 2 fun</li>
-            <li>I'm currently employed at <a href="https://sumocoders.be/">sumocoders</a> where I work on Symfony based web apps</li>
+            <li><a href="https://twitter.com/rabbit_isle_bot">https://twitter.com/rabbit_isle_bot</a></li>
+            <li><a href="https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau">https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau</a></li>
         </ul>
         <u>朴</u>
-    </section>
+        <img src="amelie.png" />
+        <p class="take">take from here</br>return to here</p>
+    </main>
+    <footer>
+        <a href="https://github.com/dreadnip">https://github.com/dreadnip</a>
+    </footer>
     <object class="source" type="text/html" data="source.txt"></object>
 </body>
 </html>
