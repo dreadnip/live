@@ -91,55 +91,9 @@
             bottom: 4rem;
         }
 
-        ::-moz-selection {
-            background: #00f;
-            color: #fff;
-        }
-
         ::selection {
             background: #00f;
             color: #fff;
-        }
-
-        @media(max-width:80rem) {
-            img {
-                max-width: 150%;
-                height: auto;
-            }
-
-            .source {
-                width: 40%;
-            }
-        }
-
-        @media(max-width:60rem) {
-            h1 {
-                top: 3rem;
-                left: 3rem;
-            }
-            body {
-                font-size: 1.25rem;
-            }
-            main {
-                max-width: 100%;
-                padding: 3rem 1rem;
-                margin: 1rem;
-            }
-
-            .take {
-                bottom: 1rem;
-                right: -3rem;
-                max-height: 10rem;
-            }
-
-            .source {
-                display: none;
-            }
-
-            img {
-                max-width: 100%;
-                height: auto
-            }
         }
     </style>
 </head>
