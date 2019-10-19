@@ -84,7 +84,7 @@
 <body>
     <header>
         <h1>sander</h1>
-        <p class="update">update: 19/10/2019 15:23</p>
+        <p class="update">update: 19/10/2019 16:28</p>
     </header>
     <main>
         <p>My name is sander. I'm a web developer from ghent, belgium.</p>
@@ -100,12 +100,12 @@
             <li><a href="https://www.youtube.com/watch?v=G0pq--oIXvU" target="_blank">1997-2003</a></li>
             <li><a href="http://ichoose.pe.hu/pdf/000.pdf" target="_blank">personality test</a></li>
         </ul>
-        <img src="amelie.png" alt="Painting by AMELIE VON WULFFEN, LUCIO AURI, Berlin. http://www.lisztliszt.de/"/>
+        <img src="amelie.webp" alt="Painting by AMELIE VON WULFFEN, LUCIO AURI, Berlin. http://www.lisztliszt.de/"/>
     </main>
     <footer>
         <a href="https://github.com/dreadnip">https://github.com/dreadnip</a>
         <u>朴</u>
-        <img class="take" src="torspeer.jpg" alt="Image by MARCO SPÖRLE and TOBIAS WILLMANN"/>
+        <img class="take" src="torspeer.webp" alt="Image by MARCO SPÖRLE and TOBIAS WILLMANN"/>
     </footer>
     <object class="source" type="text/html" data="source.txt"></object>
 </body>
