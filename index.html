@@ -2,175 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ho-mpe-ji-zukuri  !</title>
-    <meta name="description" content="">
-    <meta name="author" content="Sander De la Marche">
+    <title>~</title>
+    <meta name="description" content="   my homepage on the world wide web">
+    <meta name="author" content="sander">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="rice-balls.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-font-smoothing: antialiased
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-            font-size: 2rem;
-            color: #212121;
-            overflow-y: scroll;
-            line-height: 1.5;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-
-        h1 {
-            background-color: #ff0;
-            position: relative;
-            top: 4rem;
-            left: 4rem;
-            flex: 1;
-        }
-
-        a {
-            text-decoration: none;
-            background-color: #ff0;
-            color: #212121;
-        }
-
-        ul {
-            list-style: url(rice-balls.svg);
-            margin-left: 2rem;
-        }
-
-        ul li {
-            padding-left: .75rem;
-            margin-bottom: 1rem
-        }
-
-        main p {
-            margin-bottom: 1rem;
-        }
-
-        /* specifics */
-        .update {
-            color: red;
-        }
-
-        header, footer {
-            display: flex;
-            position: relative;
-        }
-
-        footer {
-            padding: 2rem;
-        }
-
-        footer > * + * {
-            margin-left: 1rem;
-        }
-
-        main {
-            margin: 2rem;
-            border: solid 1px black;
-            padding: 3rem;
-            max-width: 40rem;
-        }
-
-        .source {
-            position: absolute;
-            right: 0;
-            height: 100%;
-            width: 50%;
-        }
-
-        .take {
-            position: fixed;
-            right: 4rem;
-            bottom: 4rem;
-            z-index: 5;
-        }
-
-        ::-moz-selection {
-            background: #00f;
-            color: #fff;
-        }
-
-        ::selection {
-            background: #00f;
-            color: #fff;
-        }
-
-        @media(max-width:80rem) {
-            img {
-                max-width: 150%;
-                height: auto;
-            }
-
-            .source {
-                width: 40%;
-            }
-        }
-
-        @media(max-width:60rem) {
-            h1 {
-                top: 3rem;
-                left: 3rem;
-            }
-            body {
-                font-size: 1.25rem;
-            }
-            main {
-                max-width: 100%;
-                padding: 3rem 1rem;
-                margin: 1rem;
-            }
-
-            .take {
-                bottom: 1rem;
-                right: -3rem;
-                max-height: 10rem;
-            }
-
-            .source {
-                display: none;
-            }
-
-            img {
-                max-width: 100%;
-                height: auto
-            }
-        }
-    </style>
+    <style>*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}:root{--color-background:#fff;--color-text:#212121;--color-accent:#ff0;--color-selection:#00f}body{font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-size:2rem;color:var(--color-text);overflow-y:scroll;line-height:1.5;display:flex;flex-direction:column;position:relative}h1{background-color:var(--color-accent);position:relative;top:4rem;left:4rem;flex:1}img{height:auto}a{text-decoration:none;background-color:var(--color-accent);color:var(--color-text)}ul{list-style:url(rice-balls.svg);margin-left:2rem}ul li{padding-left:.75rem;margin-bottom:1rem}main p{margin-bottom:1rem}header p{color:red}header,footer{display:flex;position:relative}footer{padding:2rem}footer>* + *{margin-left:1rem}main{margin:2rem;border:solid 1px black;padding:3rem;max-width:40rem}object{position:absolute;right:0;height:100%;width:50%}#pin{position:fixed;right:4rem;bottom:4rem;z-index:5}::-moz-selection{background:var(--color-selection);color:#fff}::selection{background:var(--color-selection);color:#fff}@media(max-width:80rem){img{max-width:150%}object{width:40%}}@media(max-width:60rem){h1{top:3rem;left:3rem}body{font-size:1.25rem}main{max-width:100%;padding:3rem 1rem;margin:1rem}#pin{bottom:1rem;right:-3rem;max-height:10rem}object{display:none}img{max-width:100%}}</style>
 </head>
 <body>
-    <header>
-        <h1>sander</h1>
-        <p class="update">update: 20/10/2019 11:24</p>
-    </header>
-    <main>
-        <p>My name is sander. I'm a web developer from ghent, belgium.</p>
-        <p>I currently work for an awesome company called <a href="https://sumocoders.be/">sumocoders</a> where I build web apps with PHP and Symfony.</p>
-        <p>Before this I rode my bike through <a href="japan/">Japan</a> and <a href="https://www.youtube.com/watch?v=zOyvRjXzOig" target="_blank" title="This is obviously not my video but I think John did a really great job when it comes to showing what life on trail is all about, so it's the most relevant piece of media I can link to anyone that doesn't know the trail in an attempt to show them what it's like. His footage is also just really beautiful.">hiked from Mexico to Canada</a>.</p>
-        <p>I'm passionate about building beautiful, performant and accessible websites, but I also love music, nature, climbing and literature.</p>
-        <p>Here's some things I like</p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=erNuvARUji0" target="_blank">28 organs</a></li>
-            <li><a href="https://twitter.com/rabbit_isle_bot" target="_blank">rabbit_isle_bot</a></li>
-            <li><a href="https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau" target="_blank">face-a-quitter-le-chateau</a></li>
-            <li><a href="http://html.energy/" target="_blank">html.energy</a></li>
-            <li><a href="https://www.youtube.com/watch?v=G0pq--oIXvU" target="_blank">1997-2003</a></li>
-            <li><a href="http://ichoose.pe.hu/pdf/000.pdf" target="_blank">personality test</a></li>
-        </ul>
-        <img src="amelie.webp" alt="Painting by AMELIE VON WULFFEN, LUCIO AURI, Berlin. http://www.lisztliszt.de/"/>
-    </main>
-    <footer>
-        <a href="https://github.com/dreadnip">https://github.com/dreadnip</a>
-        <u>朴</u>
-        <img class="take" src="torspeer.webp" alt="Image by MARCO SPÖRLE and TOBIAS WILLMANN"/>
-    </footer>
-    <object class="source" type="text/html" data="source.txt"></object>
+<header>
+    <h1>sander</h1>
+    <p>update: 20/10/2019 11:24</p>
+</header>
+<main>
+    <p>My name is sander. I'm a web developer from ghent, belgium.</p>
+    <p>I currently work for an awesome company called <a href="https://sumocoders.be/">sumocoders</a> where I build web apps with PHP and Symfony.</p>
+    <p>Before this I rode my bike through <a href="japan/">Japan</a> and <a href="https://www.youtube.com/watch?v=74Fo7ZnUIEs" target="_blank" title="This is obviously not my video but I think Calvin did a really great job when it comes to showing what life on trail is all about, so it's one of the most relevant piece of media I can link to anyone that doesn't know the trail in an attempt to show them what it's like. His footage is also just really beautiful.">hiked from Mexico to Canada</a>.</p>
+    <p>I'm passionate about building beautiful, performant and accessible websites, but I also love music, nature, climbing and literature.</p>
+    <p>Here's some things I like</p>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=erNuvARUji0" target="_blank">28 organs</a></li>
+        <li><a href="https://twitter.com/rabbit_isle_bot" target="_blank">rabbit_isle_bot</a></li>
+        <li><a href="https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau" target="_blank">face-a-quitter-le-chateau</a></li>
+        <li><a href="http://html.energy/" target="_blank">html.energy</a></li>
+        <li><a href="https://www.youtube.com/watch?v=G0pq--oIXvU" target="_blank">1997-2003</a></li>
+        <li><a href="http://ichoose.pe.hu/pdf/000.pdf" target="_blank">personality test</a></li>
+    </ul>
+    <img src="amelie.webp" alt="Painting by AMELIE VON WULFFEN, LUCIO AURI, Berlin. http://www.lisztliszt.de/"/>
+</main>
+<footer>
+    <a href="https://github.com/dreadnip">https://github.com/dreadnip</a>
+    <u>朴</u>
+    <img id="pin" src="torspeer.webp" alt="Image by MARCO SPÖRLE and TOBIAS WILLMANN"/>
+</footer>
+<object type="text/html" data="source.txt" alt="the source of this web page"></object>
 </body>
 </html>
