@@ -69,7 +69,7 @@ header, footer {
 
 main {
     margin: -1.5rem var(--breathe) var(--breathe) var(--breathe);
-    padding: 9.5rem 4rem 0 4rem;
+    padding: 7.5rem 4rem 0 4rem;
     max-width: 50vw;
     border: solid 5px #000;
 }
