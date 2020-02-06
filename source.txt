@@ -1,111 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>2+2=5</title>
+    <title>sluggish, lazy, stupid and unconcerned</title>
     <meta name="description" content="   my homepage on the world wide web">
     <meta name="author" content="sander">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="icon.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-font-smoothing: antialiased
-        }
-
-        :root {
-            --color-background: #fff;
-            --color-text: #212121;
-            --color-accent: #ff0;
-            --color-selection: #f0f
-        }
-
-        body {
-            font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-            font-size: 2rem;
-            color: var(--color-text);
-            overflow-y: scroll;
-            line-height: 1.5;
-            display: flex;
-            flex-direction: column;
-            position: relative
-        }
-
-        h1 {
-            background-color: var(--color-accent);
-            position: relative;
-            top: 4rem;
-            left: 4rem;
-            flex: 1;
-            padding: 1rem;
-        }
-
-        img {
-            height: auto
-        }
-
-        a {
-            text-decoration: none;
-            background-color: var(--color-accent);
-            color: var(--color-text)
-        }
-
-        ul {
-            list-style: url(rice-balls.svg);
-            margin-left: 2rem
-        }
-
-        ul li {
-            padding-left: .75rem;
-            margin-bottom: 1rem
-        }
-
-        main p {
-            margin-bottom: 1rem
-        }
-
-        header p {
-            color: red
-        }
-
-        header,footer {
-            display: flex;
-            position: relative
-        }
-
-        main {
-            margin: 2rem;
-            padding: 3rem;
-            max-width: 40rem;
-            border: solid 3px #000;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <h1>🌾🌾🌾</h1>
-    <p>update: 16/12/2019 16:29</p>
+    <p>update: 06/02/2020 16:10</p>
 </header>
 <main>
-    <p>A web developer from Ghent, Belgium; currently working for an awesome company called <a href="https://sumocoders.be/ target="_blank"">sumocoders</a>.</p>
-    <p>I'm passionate about building beautiful websites that perform well and have character. Offline, I love <a href="japan">bikepacking</a>, <a href="https://www.youtube.com/watch?v=hiVbB7Pf2lY" target="_blank" title="Not my video but it's the best pct video in my opinion. Worth a watch">long-distance hiking</a>, climbing, ambient music and (english) literature.</p>
-    <p>Some things I like:</p>
-    <ul>
-        <li><a href="https://www.youtube.com/watch?v=erNuvARUji0" target="_blank" rel="noopener">28 organs</a></li>
-        <li><a href="http://ichoose.pe.hu/pdf/000.pdf" target="_blank" rel="noopener">personality test</a></li>
-        <li><a href="https://soundcloud.com/hugomaillard/face-a-quitter-le-chateau" target="_blank" rel="noopener">face-a-quitter-le-chateau</a></li>
-        <li><a href="http://html.energy/" target="_blank" rel="noopener">html.energy</a></li>
-        <li><a href="https://www.youtube.com/watch?v=G0pq--oIXvU" target="_blank" rel="noopener">1997-2003</a></li>
-        <li><a href="https://twitter.com/rabbit_isle_bot" target="_blank" rel="noopener">rabbit_isle_bot</a></li>
-    </ul>
-    <img src="amelie.webp" alt="Painting by AMELIE VON WULFFEN, LUCIO AURI, Berlin. http://www.lisztliszt.de/"/>
+    <p>A guy from Ghent, Belgium; currently developing for <a href="https://sumocoders.be/" target="_blank">sumocoders</a>.</p>
+    <p>I'm passionate about building beautiful websites & simple applications that perform well.</p>
+    <a href="pages/links.html">Links</a>
+    <a href="pages/quotes.html">Quotes</a>
+    <a href="pages/notes.html">Notes</a>
+    <a href="https://letterboxd.com/dreadnip/films/" title="I'll try to keep this up to date..">Movies</a>
+    <img src="images/amelie.webp" alt="Painting by AMELIE VON WULFFEN, LUCIO AURI, Berlin. http://www.lisztliszt.de/"/>
 </main>
 <footer>
     <a href="https://github.com/dreadnip">https://github.com/dreadnip</a>
     <u>朴</u>
-    <img id="pin" src="torspeer.webp" alt=""/>
+    <img id="pin" src="images/monkeys.jpg" alt=""/>
 </footer>
 <object type="text/html" data="source.txt" alt="the source of this web page"></object>
 </body>

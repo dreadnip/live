@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased
+}
+
+:root {
+    --color-background: #fff;
+    --color-text: #212121;
+    --color-accent: #ff0;
+    --color-selection: #f0f;
+    --breathe: 2rem;
+    --font-size: 3rem;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: var(--font-size);
+    color: var(--color-text);
+    overflow-y: scroll;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+h1 {
+    background-color: var(--color-accent);
+    position: relative;
+    top: 4rem;
+    left: 4rem;
+    flex: 1;
+    padding: 1rem;
+}
+
+img {
+    height: auto
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--color-accent);
+    color: var(--color-text)
+}
+
+ul {
+    list-style: url(images/rice-balls.svg);
+    margin-left: var(--breathe)
+}
+
+ul li {
+    padding-left: .75rem;
+    margin-bottom: 1rem
+}
+
+main p {
+    margin-bottom: 1rem
+}
+
+header p {
+    color: red
+}
+
+header, footer {
+    display: flex;
+    position: relative
+}
+
+main {
+    margin: -1.5rem var(--breathe) var(--breathe) var(--breathe);
+    padding: 9.5rem 4rem 0 4rem;
+    max-width: 50vw;
+    border: solid 5px #000;
+}
+
+footer {
+    padding: var(--breathe)
+}
+
+footer > * + * {
+    margin-left: 1rem
+}
+
+object {
+    position: absolute;
+    top: var(--breathe);
+    right: 0;
+    height: 100%;
+    width: 40vw;
+}
+
+#pin {
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    z-index: 5;
+    max-width: 25rem;
+}
+
+blockquote {
+    padding: var(--breathe);
+    font-style: italic;
+}
+
+blockquote:before {
+    content: '“';
+}
+
+blockquote:after {
+    content: '”';
+}
+
+::-moz-selection {
+    background: var(--color-selection);
+    color: #fff
+}
+
+::selection {
+    background: var(--color-selection);
+    color: #fff
+}
+
+@media(max-width:80rem) {
+    img {
+        max-width: 150%
+    }
+
+    object {
+        width: 40%
+    }
+}
+
+@media(max-width:60rem) {
+    header {
+        flex-direction: column;
+    }
+
+    h1 {
+        top: 0;
+        left: 0;
+    }
+
+    body {
+        font-size: 1.25rem
+    }
+
+    main {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 1rem
+    }
+
+    #pin {
+        bottom: 1rem;
+        right: -3rem;
+        max-height: 10rem
+    }
+
+    object {
+        display: none
+    }
+
+    img {
+        max-width: 100%
+    }
+}
