@@ -65,6 +65,11 @@ div > * + * {
     margin-top: 2rem;
 }
 
+hr {
+    margin: var(--breathe) 0;
+    border: solid 5rem var(--color-text);
+}
+
 ::-moz-selection {
     background: var(--color-selection);
     color: #fff
