@@ -1,3 +1,7 @@
+/*
+ * Reset
+ */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +9,29 @@
     -webkit-font-smoothing: antialiased;
 }
 
+/*
+ * Variables
+ */
+
 :root {
-    --color-text: #212121;
-    --color-accent: #ff0;
-    --color-selection: #00f;
+    --mine-shaft: #212121;
+    --mercury: #e8e8e8;
+    --tundora: #999;
+    --turbo: #fff000;
+    --blue: #0000ff;
+
+    --color-text: var(--mine-shaft);
+    --color-accent: var(--turbo);
+    --color-selection: var(--blue);
+
     --breathe: 2rem;
     --font-size: 3rem;
+    --font-size-small: 1rem;
 }
+
+/*
+ * Body & typo settings
+ */
 
 body {
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -24,20 +44,51 @@ body {
     padding: var(--breathe);
 }
 
+/*
+ * Images
+ */
+
 img {
     max-width: 100%;
     object-fit: contain;
+    vertical-align: middle; /* Remove unwanted space at the bottom inside figure elements */
 }
 
+figcaption {
+    color: var(--tundora);
+    font-size: var(--font-size-small)
+}
+
+.combo {
+    display: flex;
+    flex-direction: row;
+}
+
+p > img {
+    max-width: 20rem;
+    float: right;
+}
+
+/*
+ * Basics
+ */
+
 a {
+    color: var(--color-text)
+}
+
+a:hover {
+    background-color: var(--color-accent);
+}
+
+p > a {
     text-decoration: none;
     background-color: var(--color-accent);
-    color: var(--color-text)
 }
 
 ul {
     list-style: url(images/rice-balls.svg);
-    margin-left: var(--breathe)
+    margin: 0 var(--breathe)
 }
 
 ul li {
@@ -45,11 +96,15 @@ ul li {
     margin-bottom: 1rem
 }
 
+/*
+ * Layout
+ */
+
 header, main, footer {
     display: flex;
 }
 
-div {
+section {
     padding: var(--breathe);
     flex: 1;
     display: flex;
@@ -57,28 +112,60 @@ div {
     justify-content: center;
 }
 
+section > * + * {
+    margin-top: 2rem;
+}
+
 .no-padding {
     padding: 0;
 }
 
-div > * + * {
-    margin-top: 2rem;
+.note {
+    font-style: italic;
+    color: var(--tundora);
 }
 
-hr {
-    margin: var(--breathe) 0;
-    border: solid 5rem var(--color-text);
+.links {
+    display: flex;
+    flex-direction: column;
 }
 
-::-moz-selection {
-    background: var(--color-selection);
-    color: #fff
+.links li:nth-child(even) {
+    align-self: flex-end;
+    direction: rtl;
 }
+
+/*
+ * Quotes
+ */
+
+blockquote {
+    quotes: "“" "”" "‘" "’";
+    padding: var(--breathe);
+    font-style: italic;
+    color: var(--tundora);
+    font-size: var(--font-size);
+}
+
+blockquote:before {
+    content: open-quote;
+}
+blockquote:after {
+    content: close-quote;
+}
+
+/*
+ * Selection
+ */
 
 ::selection {
     background: var(--color-selection);
     color: #fff
 }
+
+/*
+ * Mobile
+ */
 
 @media(max-width:80rem) {
 
