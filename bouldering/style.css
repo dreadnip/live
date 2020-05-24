@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    /* Colors */
+    --eggshell: #fafafa;
+    --mine-shaft: #212121;
+    --mercury: #e8e8e8;
+    --mariner: #3A97D4;
+    --genoa: #20A672;
+    --mojo: #C44B34;
+    --rajah: #F7CE74;
+
+    /* Spacing */
+    --double: calc(var(--default) * 2);
+    --default: 3rem;
+    --breather: 2rem;
+    --half: calc(var(--default) / 2);
+    --in-between: 1.25rem;
+    --small: .5rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: var(--eggshell);
+    color: var(--mine-shaft);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    overflow-y: scroll;
+    padding: var(--default);
+}
+
+/*
+ * Basics
+ */
+
+h1, h2, h3, h4, h5 {
+    line-height: 1;
+}
+
+a {
+    display: inline-block;
+    color: var(--mojo);
+}
+
+p, ul, blockquote {
+    max-width: 40rem;
+}
+
+h2 {
+    border-bottom: solid 4px var(--mine-shaft);
+    max-width: 50%;
+    padding-bottom: var(--small);
+}
+
+section h3 {
+    margin-top: var(--breather);
+}
+
+/*
+ * Layout
+ */
+
+header * + *,
+section * + *,
+footer * + * {
+    margin-top: var(--in-between);
+}
+
+main {
+    padding: var(--half) 0;
+}
+
+section {
+    padding: var(--half) 0;
+}
+
+footer {
+    border-top: dashed 4px var(--mine-shaft);
+    padding: var(--default) 0;
+}
+
+/*
+ * Tables!!
+ */
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 4px var(--mine-shaft);
+    padding: var(--small);
+}
+
+th {
+    background-color: var(--rajah);
+}
+
+/*
+ * Fun stuff
+ */
+
+.tip {
+    padding: var(--half);
+    border-left: solid 4px var(--rajah);
+    background-color: var(--mercury);
+}
+
+blockquote {
+    quotes: "“" "”" "‘" "’";
+    padding: var(--half);
+    font-style: italic;
+    border-left: solid 4px var(--rajah);
+    background-color: var(--mercury);
+}
+
+blockquote:before {
+    content: open-quote;
+}
+blockquote:after {
+    content: close-quote;
+}
+
+ul {
+    margin-left: 2.5rem;
+    list-style: none;
+}
+
+li {
+    position: relative;
+}
+
+li + li {
+    margin-top: .5rem;
+}
+
+li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: .3rem;
+    left: -2.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+li:nth-child(odd):before {
+    background: url(hold.png) no-repeat center/cover;
+}
+
+li:nth-child(even):before {
+    background: url(hold2.png) no-repeat center/cover;
+}
+
+li:nth-child(3n+3):before {
+    background: url(hold3.png) no-repeat center/cover;
+}
+
+::selection {
+    background-color: var(--rajah);
+}
+
+/*
+ * Mobile
+ */
+
+@media screen and (max-width: 40rem) {
+    body {
+        padding: var(--half);
+        font-size: 1.2rem;
+    }
+
+    /* Change our table rows to columns */
+    table {
+        display: flex;
+    }
+
+    /* List our cells under each other instead of next to */
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Undo the global margin in-between stacked elements */
+    tbody, td, th {
+        margin-top: 0;
+    }
+
+    /* Undo the left border to prevent double borders */
+    tbody td {
+        border-left: none;
+    }
+
+    /* Undo the top border to prevent double borders */
+    td + td, th + th {
+        border-top: none;
+    }
+}
+
+/* ~ The end ~ */
