@@ -44,6 +44,10 @@ body {
     padding: var(--breathe);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+}
+
 /*
  * Images
  */
@@ -126,14 +130,10 @@ section > * + * {
 }
 
 .links {
-    display: flex;
     flex-direction: column;
 }
 
-.links li:nth-child(even) {
-    align-self: flex-end;
-    direction: rtl;
-}
+
 
 /*
  * Quotes
@@ -141,10 +141,11 @@ section > * + * {
 
 blockquote {
     quotes: "“" "”" "‘" "’";
-    padding: var(--breathe);
+    border-left: solid 3px var(--color-accent);
+    padding-left: 1rem;
     font-style: italic;
     color: var(--tundora);
-    font-size: var(--font-size);
+    font-size: inherit;
 }
 
 blockquote:before {
@@ -189,4 +190,12 @@ blockquote:after {
     header, main, footer {
         flex-direction: column;
     }
+
+    section {
+        padding: 1rem;
+    }
+
+    section > * + * {
+    margin-top: 1rem;
+}
 }
