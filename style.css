@@ -73,6 +73,16 @@ p > img {
     float: right;
 }
 
+.litto {
+    overflow: hidden;
+    padding: 0;
+    background-color: #C1F07C;
+}
+
+.litto p > a {
+    background-color: #f07cc1;
+}
+
 /*
  * Basics
  */
@@ -171,7 +181,7 @@ blockquote:after {
 @media(max-width:80rem) {
 
     body {
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 1rem;
     }
 
@@ -180,7 +190,7 @@ blockquote:after {
     }
 }
 
-@media(max-width:50rem) {
+@media(max-width:40rem) {
 
     body {
         font-size: 1.25rem;
