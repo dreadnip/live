@@ -176,8 +176,8 @@ blockquote:after {
  */
 
 ::selection {
-    background: var(--color-selection);
-    color: #fff
+    background: var(--genoa);
+    color: var(--mercury);
 }
 
 /*
