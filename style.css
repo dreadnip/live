@@ -19,6 +19,10 @@
     --tundora: #999;
     --turbo: #fff000;
     --blue: #0000ff;
+    --mariner: #3A97D4;
+    --genoa: #20A672;
+    --mojo: #C44B34;
+    --rajah: #F7CE74;
 
     --color-text: var(--mine-shaft);
     --color-accent: var(--turbo);
@@ -74,9 +78,15 @@ p > img {
 }
 
 .litto {
-    overflow: hidden;
-    padding: 0;
-    background-color: #8EB8F0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mojo);
+}
+
+.litto p > a {
+    color: var(--rajah);
+    background: none;
 }
 
 /*
