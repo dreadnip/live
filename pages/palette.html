@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>colors</title>
+    <meta name="description" content="color">
+    <meta name="author" content="sander">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <style>
+    	* {
+    		box-sizing: border-box;
+    	}
+    	h2 {
+    		flex: 1;
+    	}
+    	section {
+    		display: flex;
+    		flex-wrap: wrap;
+    	}
+    	article {
+    		padding: 1rem;
+    		width: 50%;
+    		min-height: 10rem;
+    		display: flex;
+    	}
+
+    	article span {
+    		flex: 1;
+    		text-align: right;
+    	}
+    </style>
+</head>
+<body>
+<main>
+    <section>
+    	<h2>Text</h2>
+    	<article style="background-color: #6C7480">
+	    	--pale-sky
+	    	<span>#6C7480</span>
+	    </article>
+	    <article style="background-color: #576AD8">
+	    	--havelock-blue
+	    	<span>#576AD8</span>
+	    </article>
+	    <article style="background-color: #067BBF">
+	    	--lochmara
+	    	<span>#067BBF</span>
+	    </article>
+	    <article style="background-color: #0A805D">
+	    	--salem
+	    	<span>#0A805D</span>
+	    </article>
+	    <article style="background-color: #B6570A">
+	    	--pumpkin-skin
+	    	<span>#B6570A</span>
+	    </article>
+	    <article style="background-color: #C24D33">
+	    	--mojo
+	    	<span>#C24D33</span>
+	    </article>
+	    <article style="background-color: #CC3D64">
+	    	--hibiscus
+	    	<span>#CC3D64</span>
+	    </article>
+	    <article style="background-color: #A050B1">
+	    	--wisteria
+	    	<span>#A050B1</span>
+	    </article>
+	    <article style="background-color: #825FC5;">
+	    	--bafuchsia-blue
+	    	<span>#825FC5</span>
+	    </article>
+    </section>
+    <section>
+    	<h2>Icons</h2>
+    	<article style="background-color: #87929F">
+	    	--regent-gray
+	    	<span>#87929F</span>
+	    </article>
+	    <article style="background-color: #6890F5">
+	    	--cornflower-blue
+	    	<span>#6890F5</span>
+	    </article>
+	    <article style="background-color: #3A97D2">
+	    	--shakespeare
+	    	<span>#3A97D2</span>
+	    </article>
+	    <article style="background-color: #16A776">
+	    	--mountain-meadow
+	    	<span>#16A776</span>
+	    </article>
+	    <article style="background-color: #D87A1A">
+	    	--zest
+	    	<span>#D87A1A</span>
+	    </article>
+	    <article style="background-color: #E17143">
+	    	--red-damask
+	    	<span>#E17143</span>
+	    </article>
+	    <article style="background-color: #E76073">
+	    	--mandy
+	    	<span>#E76073</span>
+	    </article>
+	    <article style="background-color: #CB8FCF">
+	    	--light-wisteria
+	    	<span>#CB8FCF</span>
+	    </article>
+	    <article style="background-color: #9C83D4;">
+	    	--lilac-bush
+	    	<span>#9C83D4</span>
+	    </article>
+    </section>
+</main>
+<script>
+const colors = document.querySelectorAll('article');
+colors.forEach((color) => {
+	color.addEventListener('click', (event) => {
+		console.log(event.target);
+		let hex = event.target.querySelector('span').textContent;
+		hex.select();
+  		document.execCommand("copy");
+	});
+});
+</script>
+</body>
+</html>
+
+Alex: +1 (206) 992-6425

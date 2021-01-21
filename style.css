@@ -29,7 +29,7 @@
     --color-selection: var(--blue);
 
     --breathe: 2rem;
-    --font-size: 3rem;
+    --font-size: 2rem;
     --font-size-small: 1rem;
 }
 
@@ -134,6 +134,10 @@ blockquote:after {
 ::selection {
     background: var(--genoa);
     color: var(--mercury);
+}
+
+:focus {
+    outline: solid .5rem var(--color-accent);
 }
 
 /*
