@@ -24,13 +24,15 @@
     --mojo: #C44B34;
     --rajah: #F7CE74;
     --zest: #9C83D4;
+    --concrete: #fafafa;
 
     --color-text: var(--mine-shaft);
+    --color-background: var(--concrete);
     --color-accent: var(--turbo);
     --color-selection: var(--blue);
 
     --breathe: 2rem;
-    --font-size: 2rem;
+    --font-size: 1.5rem;
     --font-size-small: 1rem;
 }
 
@@ -44,9 +46,9 @@ body {
     color: var(--color-text);
     overflow-y: scroll;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
     padding: var(--breathe);
+    background-color: var(--color-background);
+    max-width: 50rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 /*
  * Images
  */
+
+figure {
+    margin: 1rem 0;
+}
 
 img {
     max-width: 100%;
@@ -97,17 +103,23 @@ p > a {
 
 ul {
     list-style: none;
-    margin: 0 var(--breathe)
 }
 
 /*
  * Layout
  */
 
-main > * + * {
-    margin-top: 2rem;
+header {
+    margin-bottom: var(--breathe);
 }
 
+main > * + * {
+    margin-top: var(--breathe);;
+}
+
+main ul, main ol {
+    margin-left: var(--breathe);
+}
 /*
  * Quotes
  */
@@ -148,7 +160,7 @@ blockquote:after {
 @media(max-width:80rem) {
 
     body {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         padding: 1rem;
     }
 }
