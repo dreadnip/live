@@ -59,12 +59,22 @@ p, ul, blockquote {
 
 h2 {
     border-bottom: solid 4px var(--mine-shaft);
-    max-width: 50%;
     padding-bottom: var(--small);
 }
 
 section h3 {
     margin-top: var(--breather);
+}
+
+.subtitle {
+    display:  inline-block;
+    background-color: var(--rajah);
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    vertical-align: middle; /* Remove unwanted space at the bottom inside figure elements */
 }
 
 /*
@@ -76,13 +86,13 @@ nav {
     position: sticky;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 nav a {
-    color: var(--pearl);
     text-decoration: none;
     width: 100%;
-    padding: 0 4rem;
+    padding: 0 3rem;
     background-color: var(--campus-background);
     text-align: center;
     white-space: nowrap;
@@ -106,7 +116,7 @@ nav a:before, nav a:after {
     border-radius: 50%;
     background: var(--mine-shaft);
     position: absolute;
-    top: 1rem;
+    top: .75rem;
 }
 
 nav a:before {
@@ -191,8 +201,8 @@ blockquote {
     quotes: "“" "”" "‘" "’";
     padding: var(--half);
     font-style: italic;
-    border-left: solid 4px var(--rajah);
-    background-color: var(--mercury);
+    border-left: solid 8px var(--rajah);
+    background-color: #f3f3f3;
 }
 
 blockquote:before {
@@ -249,6 +259,19 @@ li:nth-child(3n+3):before {
     body {
         padding: var(--half);
         font-size: 1.2rem;
+        flex-direction:  column;
+    }
+
+    header {
+        padding-left: 0;
+    }
+
+    main {
+        padding-left: 0;
+    }
+
+    section {
+        padding: var(--half) 0;
     }
 
     /* Change our table rows to columns */
