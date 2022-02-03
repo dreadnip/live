@@ -76,7 +76,7 @@ img {
 
 figcaption {
     font-size:  1.2rem;
-    color: #a1a1a1;
+    color: #e5e5e5;
 }
 
 /*
@@ -101,7 +101,7 @@ nav a {
     white-space: nowrap;
     color: var(--text);
     position: relative;
-    border-radius: 5px;
+    border-radius: 3px;
     border: solid 2px var(--campus-shadow);
     box-shadow: 1px 1px 0px var(--campus-shadow),
                 2px 2px 0px var(--campus-shadow),
@@ -111,13 +111,14 @@ nav a {
 
 nav a:hover {
     transition: top 400ms, left 400ms;
-    top: -1px;
-    left: -1px;
+    top: -2px;
+    left: -2px;
     box-shadow: 1px 1px 0px var(--campus-shadow),
                 2px 2px 0px var(--campus-shadow),
                 3px 3px 0px var(--campus-shadow),
                 4px 4px 0px var(--campus-shadow),
-                5px 5px 0px var(--campus-shadow);
+                5px 5px 0px var(--campus-shadow),
+                6px 6px 0px var(--campus-shadow);
 }
 
 nav a:before, nav a:after {
