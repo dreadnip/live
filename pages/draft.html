@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+:root {
+  --base: 1px;
+  --2: calc(var(--base) * 2);
+  --4: calc(var(--base) * 4);
+  --8: calc(var(--base) * 8);
+  --16: calc(var(--base) * 16);
+  --32: calc(var(--base) * 32);
+  --color-full: hsl(220deg 100% 80%);
+  --color-washed: hsl(220deg 100% 50% / 0.2);
+}
+
+body {
+  background-color: var(--color-full);
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.shadow {
+  width: 150px;
+  box-shadow:
+    var(--base) var(--2) var(--2) var(--color-washed),
+    var(--2) var(--4) var(--4) var(--color-washed),
+    var(--4) var(--8) var(--8) var(--color-washed),
+    var(--8) var(--16) var(--16) var(--color-washed),
+    var(--16) var(--32) var(--32) var(--color-washed);
+}
+</style>
+</head>
+<body>
+<div class="box shadow"></div>
+	</body>
+</html>

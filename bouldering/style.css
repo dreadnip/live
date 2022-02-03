@@ -15,6 +15,12 @@
     --mojo: #C44B34;
     --rajah: #F7CE74;
 
+    /* Campus */
+    --campus-light: hsl(40deg 35% 65%);
+    --campus-background: hsl(40deg 35% 60%);
+    --campus-dark: hsl(40deg 35% 25%);
+    --campus-shadow: hsl(40deg 35% 35%);
+
     /* Spacing */
     --double: calc(var(--default) * 2);
     --default: 3rem;
@@ -31,7 +37,7 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     overflow-y: scroll;
-    padding: var(--default);
+    display: flex;
 }
 
 /*
@@ -62,6 +68,60 @@ section h3 {
 }
 
 /*
+ * Navigation
+ */
+
+nav {
+    top: var(--default);
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: var(--pearl);
+    text-decoration: none;
+    width: 100%;
+    padding: 0 4rem;
+    background-color: var(--campus-background);
+    text-align: center;
+    white-space: nowrap;
+    color: var(--text);
+    position: relative;
+    border: solid 2px var(--campus-shadow);
+    box-shadow: 2px 2px 0px var(--campus-shadow);
+}
+
+nav a:hover {
+    transition: top 400ms, left 400ms;
+    top: -2px;
+    left: -1px;
+    box-shadow: 3px 4px 0px var(--campus-shadow);
+}
+
+nav a:before, nav a:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--mine-shaft);
+    position: absolute;
+    top: 1rem;
+}
+
+nav a:before {
+    left: var(--half);
+}
+
+nav a:after {
+    right: var(--half);
+}
+
+nav a + a {
+    margin-top: 2rem;
+}
+
+/*
  * Layout
  */
 
@@ -71,12 +131,16 @@ footer * + * {
     margin-top: var(--in-between);
 }
 
+header {
+    padding-left: var(--default);
+}
+
 main {
-    padding: var(--half) 0;
+    padding-left: var(--default);
 }
 
 section {
-    padding: var(--half) 0;
+    padding: var(--default) 0;
 }
 
 footer {
@@ -107,8 +171,20 @@ th {
 
 .tip {
     padding: var(--half);
-    border-left: solid 4px var(--rajah);
-    background-color: var(--mercury);
+    border: solid 4px var(--rajah);
+    font-style: italic;
+    position: relative;
+}
+
+.tip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -.4rem;
+    left: -.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: url(hold.png) no-repeat center/cover;
 }
 
 blockquote {

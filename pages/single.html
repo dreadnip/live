@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>sluggish, lazy, stupid and unconcerned</title>
+	<meta name="description" content="my homepage on the world wide web">
+	<meta name="author" content="sander">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icon.png">
+	<style>
+    	/*
+		 * Reset
+		 */
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		/*
+		 * Variables
+		 */
+
+		:root {
+			--mine-shaft: #212121;
+			--mercury: #e8e8e8;
+			--tundora: #999;
+			--turbo: #fff000;
+			--blue: #0000ff;
+			--mariner: #3A97D4;
+			--genoa: #20A672;
+			--mojo: #C44B34;
+			--rajah: #F7CE74;
+			--zest: #9C83D4;
+			--concrete: #fafafa;
+			--tan-hide: #FD9C51;
+			--pastel-green: #7BE076;
+			--lime-pie: #BFD630;
+
+			--color-text: var(--mine-shaft);
+			--color-background: var(--concrete);
+			--color-accent: var(--lime-pie);
+
+			--breathe: 2rem;
+			--font-size: 2rem;
+			--font-size-small: 1rem;
+		}
+
+		/*
+		 * Body & typo settings
+		 */
+
+		body {
+			font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+			font-size: var(--font-size);
+			color: var(--color-text);
+			overflow-y: scroll;
+			line-height: 1.5;
+			background-color: var(--color-background);
+
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1;
+		}
+
+		/*
+		 * Section / structure
+		 */ 
+
+		main {
+			border: solid 5px red;
+			position:  relative;
+		}
+
+		section {
+			padding: calc(6em + 5vw) 5vw 8vw 5vw;
+			display: none;
+			position: absolute;
+			top: 0;
+			min-height: 100vh;
+			width: 100%;
+			background-color: var(--color-background);
+		}
+
+		section:target {
+			display: block;
+		}
+
+		section#home {
+			display: block;
+		}
+
+		/*
+		 * Images
+		 */
+
+		img {
+			max-width: 100%;
+			object-fit: contain;
+			vertical-align: middle; /* Remove unwanted space at the bottom inside figure elements */
+		}
+
+		figure {
+			position: relative;
+			margin: 1rem 0;
+		}
+
+
+		figcaption {
+			padding: 1rem 0;
+			display: inline-block;
+		}
+
+		/*
+		 * Basics
+		 */
+
+		a {
+			color: var(--color-text)
+		}
+
+		a:hover {
+			background-color: var(--color-accent);
+		}
+
+		p > a {
+			text-decoration: none;
+			background-color: var(--color-accent);
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		/*
+		 * Layout
+		 */
+
+		header {
+			position: absolute;
+			border: solid 5px green;
+			z-index: 2;
+			padding: var(--breathe);
+		}
+
+		main ul, main ol {
+			margin-left: var(--breathe);
+		}
+
+		/*
+		 * Mobile
+		 */
+
+		@media(max-width:80rem) {
+
+			body {
+				font-size: 1.5rem;
+				padding: 1rem;
+			}
+		}
+
+		@media(max-width:40rem) {
+
+			body {
+				font-size: 1.25rem;
+				padding: 1rem;
+			}
+
+			main > * + * {
+				margin-top: 1rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="#home">John Doe</a>
+		</h1>
+		<nav>
+			<a href="#second">Second</a>
+			<a href="#third">Third</a>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<p>First</p>
+		</section>
+
+		<section id="second">
+			<p>Second</p>
+		</section>
+
+		<section id="third">
+			<p>Third</p>
+		</section>
+	</main>
+</body>
+</html>
