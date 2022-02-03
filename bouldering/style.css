@@ -18,7 +18,7 @@
     /* Campus */
     --campus-light: hsl(40deg 35% 65%);
     --campus-background: hsl(40deg 35% 60%);
-    --campus-dark: hsl(40deg 35% 25%);
+    --campus-dark: hsl(40deg 35% 75%);
     --campus-shadow: hsl(40deg 35% 35%);
 
     /* Spacing */
@@ -91,23 +91,31 @@ nav {
 }
 
 nav a {
+    font-size: 1.4rem;
     text-decoration: none;
     width: 100%;
-    padding: 0 4rem;
+    padding: .2rem 4rem 0 4rem;
     background-color: var(--campus-background);
     text-align: center;
     white-space: nowrap;
     color: var(--text);
     position: relative;
     border: solid 2px var(--campus-shadow);
-    box-shadow: 2px 2px 0px var(--campus-shadow);
+    box-shadow: 1px 1px 0px var(--campus-shadow),
+                2px 2px 0px var(--campus-shadow),
+                3px 3px 0px var(--campus-shadow),
+                4px 4px 0px var(--campus-shadow);
 }
 
 nav a:hover {
     transition: top 400ms, left 400ms;
-    top: -2px;
+    top: -1px;
     left: -1px;
-    box-shadow: 3px 4px 0px var(--campus-shadow);
+    box-shadow: 1px 1px 0px var(--campus-shadow),
+                2px 2px 0px var(--campus-shadow),
+                3px 3px 0px var(--campus-shadow),
+                4px 4px 0px var(--campus-shadow),
+                5px 5px 0px var(--campus-shadow);
 }
 
 nav a:before, nav a:after {
@@ -117,7 +125,7 @@ nav a:before, nav a:after {
     border-radius: 50%;
     background: var(--mine-shaft);
     position: absolute;
-    top: .75rem;
+    top: .95rem;
 }
 
 nav a:before {
