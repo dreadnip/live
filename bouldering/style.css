@@ -54,10 +54,6 @@ a {
     color: var(--mojo);
 }
 
-p, ul, blockquote {
-    max-width: 40rem;
-}
-
 h2 {
     border-bottom: solid 4px var(--mine-shaft);
     padding-bottom: var(--small);
@@ -78,6 +74,11 @@ img {
     vertical-align: middle; /* Remove unwanted space at the bottom inside figure elements */
 }
 
+figcaption {
+    font-size:  1.2rem;
+    color: #a1a1a1;
+}
+
 /*
  * Navigation
  */
@@ -91,7 +92,7 @@ nav {
 }
 
 nav a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     width: 100%;
     padding: .2rem 4rem 0 4rem;
@@ -100,6 +101,7 @@ nav a {
     white-space: nowrap;
     color: var(--text);
     position: relative;
+    border-radius: 5px;
     border: solid 2px var(--campus-shadow);
     box-shadow: 1px 1px 0px var(--campus-shadow),
                 2px 2px 0px var(--campus-shadow),
@@ -155,6 +157,7 @@ header {
 }
 
 main {
+    max-width: 40rem;
     padding-left: var(--default);
 }
 
