@@ -67,7 +67,8 @@ img {
     vertical-align: middle; /* Remove unwanted space at the bottom inside figure elements */
 }
 
-figure {
+figure, picture {
+    display: block;
     position: relative;
     margin: 1rem 0;
 }
