@@ -48,7 +48,7 @@ body {
     color: var(--color-text);
     overflow-y: scroll;
     line-height: 1.5;
-    padding: var(--breathe);
+    padding: 3rem;
     background-color: var(--color-background);
 
 }
@@ -110,6 +110,10 @@ ul {
     list-style: none;
 }
 
+ul > li + li {
+    margin-top: .2rem;
+}
+
 /*
  * Layout
  */
@@ -119,12 +123,27 @@ header {
 }
 
 main > * + * {
-    margin-top: var(--breathe);;
+    margin-top: var(--breathe);
 }
 
-main ul, main ol {
-    margin-left: var(--breathe);
+.home {
+    display: flex;
 }
+
+.home > ul {
+    width: 50%;
+}
+
+.home > aside {
+    display: block;
+    margin: 0;
+    width: 50%;
+}
+
+aside > picture {
+
+}
+
 /*
  * Quotes
  */
@@ -180,5 +199,18 @@ blockquote:after {
 
     main > * + * {
         margin-top: 1rem;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home > ul {
+        width: 100%;
+    }
+
+    .home > aside {
+        margin-top: var(--breathe);
+        width: 100%;
     }
 }
