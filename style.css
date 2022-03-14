@@ -141,7 +141,7 @@ main > * + * {
 }
 
 aside > picture {
-
+    margin: 0;
 }
 
 /*
