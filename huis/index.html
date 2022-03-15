@@ -29,7 +29,7 @@
 
         main {
             display: grid;
-            grid-template-columns: repeat(3, 30rem);
+            grid-template-columns: repeat(3, 25rem);
             grid-gap: 3rem;
             margin-top: 2rem;
         }
@@ -38,10 +38,17 @@
             max-width: 100%;
         }
 
+        @media(max-width:80rem) {
+            main {
+                grid-template-columns: repeat(3, 20rem);
+                grid-gap: 2rem;
+            }
+        }
+
         @media(max-width:60rem) {
             main {
                 grid-template-columns: repeat(2, 20rem);
-                grid-gap: 2rem;
+                grid-gap: 1rem;
             }
         }
 
@@ -58,6 +65,9 @@
         <ul>
             <li><a href="nl.html">Immoweb backup NL</a></li>
             <li><a href="en.html">Immoweb backup ENG</a></li>
+            <li><a href="epc_oud.pdf">EPC oud</a></li>
+            <li><a href="epc_nieuw.pdf">EPC nieuw</a></li>
+            <li><a href="keuring.pdf">keuring</a></li>
         </ul>
     </header>
     <main>
