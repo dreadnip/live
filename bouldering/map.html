@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>"just grab the hold"</title>
+	<meta name="description" content="A very subjective collection of bouldering related information that I've gathered while learning how to boulder.">
+	<meta name="author" content="@dreadnip">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="hold.png">
+	<style>
+		:root {
+			--campus-shadow: rgba(0,0,0,0.2);
+		}
+
+		html, body {
+			min-height: 100vh;
+		}
+
+		body {
+			background: #fafafa;
+		}
+
+		main {
+			min-height: 100vh;
+			display: flex;
+			outline: dashed 1px blue;
+		}
+
+		section {
+			width: 50%;
+			padding: 2rem;
+		}
+
+		.map {
+			outline: dashed 1px red;
+		}
+
+		.overview {
+			display: flex;
+		}
+
+		.list + .list {
+			margin-left: 2rem;
+		}
+
+		ol {
+			padding-left: 1rem;
+		}
+
+		.tooltip {
+			display: none;
+			position: absolute;
+			background: #fafafa;
+			border: 2px solid black;
+			border-radius: 5px;
+			padding: 1rem;
+			box-shadow: 1px 1px 0px var(--campus-shadow),
+						2px 2px 0px var(--campus-shadow),
+						3px 3px 0px var(--campus-shadow),
+						4px 4px 0px var(--campus-shadow);
+		}
+
+		.grade {
+			background: #3A97D2;
+			border-radius: 50%;
+			padding: .5rem;
+			text-align: center;
+			width: 1rem;
+			height: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<section class="map">
+			<div class="tooltip"></div>
+			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 128.335 239.986">
+				<defs>
+					<filter x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" id="pencilTexture2">
+						<feTurbulence type="fractalNoise" baseFrequency="2" numOctaves="5" stitchTiles="stitch" result="t1">
+						</feTurbulence>
+						<feComposite operator="in" in2="t2" in="SourceGraphic" result="SourceTextured">
+						</feComposite>
+						<feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="5" seed="1" result="f1">
+						</feTurbulence>
+						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="5" in="SourceTextured" in2="f1" result="f4">
+						</feDisplacementMap>
+						<feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="5" seed="10" result="f2">
+						</feTurbulence>
+						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="5" in="SourceTextured" in2="f2" result="f5">
+						</feDisplacementMap>
+						<feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="5" seed="100" result="f3">
+						</feTurbulence>
+						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="3" in="SourceTextured" in2="f3" result="f6">
+						</feDisplacementMap>
+						<feBlend mode="multiply" in2="f4" in="f5" result="out1">
+						</feBlend>
+						<feBlend mode="multiply" in="out1" in2="f6" result="out2">
+						</feBlend>
+					</filter>
+				</defs>
+				<g>
+					<path style="fill:none;stroke:#333;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M70.079 66.236 51.014 91.44l7.329 13.153L77.935 92.53l6.693 4.786 13.11 1.339 3.845-4.066-6.271-34.947-4.508-.901-1.829-3.705-16.282-.803-3.594 8.243z" transform="translate(-9.94 -9.972)"/>
+
+					<path style="fill:none;stroke:#333;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m37.615 146.464-10.011-26.619 5.282-8.984-20.184-16.859-2.63-27.752 3.087-36.28 22.41-8.177 29.676.342 20.377 9.57 3.65-4.237 2.788-.1 11.356 16.88 14.612-.746 18.892 12.733-5.287 55.105-12.36 11.069-1.147 15.124L135.3 176.87l-14.85 22.99 17.233 18.832.459 23.46-6.357 7.45-10.066.224" transform="translate(-9.94 -9.972)"/>
+
+					<path style="fill:none;stroke:#333;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m136.92 56.235-.602-46.114-42.337 5.18-1.921 12.066" transform="translate(-9.94 -9.972)"/>
+				
+					<circle data-role="marker" data-id="1" cx="60" cy="55" r="2" stroke="#333" stroke-width="0.5" fill="#16A776" />
+					<circle data-role="marker" data-id="2" cx="75" cy="85" r="2" stroke="#333" stroke-width="0.5" fill="#E8DD05" />
+					<circle data-role="marker" data-id="3" cx="105" cy="33" r="2" stroke="#333" stroke-width="0.5" fill="#D87A1A" />
+					<circle data-role="marker" data-id="4" cx="90" cy="5" r="2" stroke="#333" stroke-width="0.5" fill="#3A97D2" />
+					<circle data-role="marker" data-id="5" cx="3" cy="35" r="2" stroke="#333" stroke-width="0.5" fill="#e8350d" />
+					<circle data-role="marker" data-id="6" cx="121" cy="95" r="2" stroke="#333" stroke-width="0.5" fill="#333333" />
+					<circle data-role="marker" data-id="7" cx="150" cy="95" r="2" stroke="#333" stroke-width="0.5" fill="#E8E6E6" />
+					<circle data-role="marker" data-id="8" cx="118" cy="150" r="2" stroke="#333" stroke-width="0.5" fill="#A050B1" />
+				</g>
+			</svg>
+		</section>
+		<section>
+			<h1>Boulders</h1>
+			<div class="overview">
+				<div class="list">
+					<h2 style="color: #E0D229">Beginner</h2>
+					<ol>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+					</ol>
+				</div>
+				<div class="list">
+					<h2>Novice</h2>
+					<ol>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+					</ol>
+				</div>
+				<div class="list">
+					<h2>Advanced</h2>
+					<ol>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+					</ol>
+				</div>
+				<div class="list">
+					<h2>Hard</h2>
+					<ol>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+					</ol>
+				</div>
+				<div class="list">
+					<h2>Elite</h2>
+					<ol>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+						<li>6a</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!--
+	Problem:
+	 - id
+	 - grade: enum
+	 - location (x, y on map)
+	 - ratings: collection of Rating
+	 - set: datetime
+	 - setter: ManyToOne -> Setter
+	 - set in: int (minutes)
+	 - color
+
+	 Rating:
+	  - id
+	  - type: enum
+	  - problem: id
+	  - user: id
+	  - date: datetime
+
+	 Setter:
+	  - id
+	  - name
+	  - problems: OneToMany -> problem
+
+
+
+	Ethos:
+	No tops -> tops don't matter to setters. If a boulder is too hard they can rate it as: awkward, not fun, too hard, frustrating
+	No grade graphs/history -> frustrating, promotes grade chasing
+	No social aspect -> no point in seeing who tops/climbs/rates what
+
+	Focus on problem management for setters (when was something set, how long did it take, who set it, what did visitors rate it).
+	If a climber rates a problem, he probably touched it -> you should get feedback.
+	-->
+	<script src="https://bumbu.me/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
+	<script>
+		const map = document.querySelector('.map svg')
+		const markers = document.querySelectorAll('[data-role="marker"]')
+		const tooltip = document.querySelector('.tooltip')
+
+		markers.forEach((marker) => {
+			marker.addEventListener('mouseenter', (event) => {
+				const id = event.target.dataset.id
+				showTooltip(event, id)
+			})
+
+			marker.addEventListener('mouseleave', (event) => {
+				hideTooltip()
+			})
+		})
+
+		const svgControls = svgPanZoom(map, {
+			minZoom: 0.5,
+			zoomScaleSensitivity: 0.7,
+			maxZoom: 2,
+		})
+
+		function showTooltip(evt, text) {
+			tooltip.innerHTML = '<span class="grade">7a</span>' +
+					'<span class="setter">Lukas</span>' +
+					'<span class="tops">28 tops</span>';
+			tooltip.style.display = "flex";
+			tooltip.style.left = evt.target.getBoundingClientRect().x + 10 + 'px';
+			tooltip.style.top = evt.target.getBoundingClientRect().y + 10 + 'px';
+		}
+
+		function hideTooltip() {
+			tooltip.style.display = "none";
+		}
+	</script>
+</body>
+</html>
