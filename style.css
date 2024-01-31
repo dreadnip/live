@@ -36,6 +36,7 @@
     --breathe: 2rem;
     --font-size: 2rem;
     --font-size-small: 1rem;
+    --border-width: .5rem;
 }
 
 /*
@@ -87,7 +88,7 @@ p > img {
 a {
     color: var(--color-text);
     text-decoration: none;
-    border-bottom: solid 6px var(--color-accent);
+    border-bottom: solid var(--border-width) var(--color-accent);
 }
 
 a:hover {
@@ -145,9 +146,10 @@ blockquote:after {
     background: var(--color-accent);
 }
 
-:focus {
-    outline: none;
-    background: var(--color-accent);
+:focus-visible {
+    border: none;
+    outline-offset: var(--border-width);
+    outline: solid var(--border-width) var(--color-accent);
 }
 
 /*
