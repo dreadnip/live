@@ -12,18 +12,51 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-font-smoothing: antialiased
+            -webkit-font-smoothing: antialiased;
         }
 
+        /*
+         * Variables
+         */
+
+        :root {
+            --mine-shaft: #212121;
+            --mercury: #e8e8e8;
+            --tundora: #999;
+            --turbo: #fff000;
+            --blue: #0000ff;
+            --mariner: #3A97D4;
+            --genoa: #20A672;
+            --mojo: #C44B34;
+            --rajah: #F7CE74;
+            --zest: #9C83D4;
+            --concrete: #fafafa;
+            --tan-hide: #FD9C51;
+            --pastel-green: #7BE076;
+            --lime-pie: #BFD630;
+
+            --color-text: var(--mine-shaft);
+            --color-background: var(--concrete);
+            --color-accent: var(--lime-pie);
+
+            --breathe: 2rem;
+            --font-size: 2rem;
+            --font-size-small: 1rem;
+        }
+
+        /*
+         * Body & typo settings
+         */
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-            font-size: 1rem;
-            color: #212121;
+            font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+            font-size: var(--font-size);
+            color: var(--color-text);
             overflow-y: scroll;
             line-height: 1.5;
-            display: flex;
-            flex-direction: column;
-            position: relative;
+            padding: 3rem;
+            background-color: var(--color-background);
+
         }
 
         main {
@@ -46,7 +79,7 @@
 </head>
 <body>
     <header>
-        <p>I decided to travel to Japan and ride my bike from the southern cape Sata to the northernmost point in Japan, Cape Soya. It took me 2 months to complete the 4300km ride. I wish I had taken more pictures from the people that I met along the way but it often felt intrusive to take out my phone so this page is mostly photos from the national parks and roads I rode on. Must visit: Sapporo, Aso-Kuju national park, all of Skikoku if you're by bike or hiking the temple pilgrimage, Aomori, Tottori, Omine-san/Nara mountains, Ise-Shima, Fujiyoshida, Bandai Asahi national park, Matsumoto, Nagasaki, Osore-san, Shiretoko, Osaka, <strong>all of Hokkaido</strong>.</p>
+        <p>In 2019, I rode my bike through Japan from the southern cape Sata to the northernmost point, Cape Soya. It took me 2 months to complete the 4300km ride. I wish I had taken more pictures from the people that I met along the way, but it often felt intrusive to take out my phone so this page is mostly photos from the national parks and roads I rode on. Must visit: Sapporo, Aso-Kuju national park, all of Skikoku if you're by bike or hiking the temple pilgrimage, Aomori, Tottori, Omine-san/Nara mountains, Ise-Shima, Fujiyoshida, Bandai Asahi national park, Matsumoto, Nagasaki, Osore-san, Shiretoko, Osaka, <strong>all of Hokkaido really</strong>.</p>
     </header>
     <main>
         <img loading="lazy" src="1.jpg" alt=""/>

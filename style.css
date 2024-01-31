@@ -85,24 +85,22 @@ p > img {
 }
 
 a {
-    color: var(--color-text)
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: solid 6px var(--color-accent);
 }
 
 a:hover {
+    transition: 200ms;
     background-color: var(--color-accent);
-}
-
-p > a {
-    text-decoration: none;
-    border-bottom: solid 6px var(--color-accent);
 }
 
 ul {
     list-style: none;
 }
 
-ul > li + li {
-    margin-top: .2rem;
+ol {
+    margin-left: var(--breathe);
 }
 
 .flow > * + * {

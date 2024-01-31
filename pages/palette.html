@@ -8,9 +8,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../images/icon.png">
     <style>
-    	* {
-    		box-sizing: border-box;
-    	}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		/*
+         * Variables
+         */
+
+		:root {
+			--mine-shaft: #212121;
+			--mercury: #e8e8e8;
+			--tundora: #999;
+			--turbo: #fff000;
+			--blue: #0000ff;
+			--mariner: #3A97D4;
+			--genoa: #20A672;
+			--mojo: #C44B34;
+			--rajah: #F7CE74;
+			--zest: #9C83D4;
+			--concrete: #fafafa;
+			--tan-hide: #FD9C51;
+			--pastel-green: #7BE076;
+			--lime-pie: #BFD630;
+
+			--color-text: var(--mine-shaft);
+			--color-background: var(--concrete);
+			--color-accent: var(--lime-pie);
+
+			--breathe: 2rem;
+			--font-size: 2rem;
+			--font-size-small: 1rem;
+		}
+
+		/*
+         * Body & typo settings
+         */
+
+		body {
+			font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+			font-size: var(--font-size);
+			color: var(--color-text);
+			overflow-y: scroll;
+			line-height: 1.5;
+			padding: 3rem;
+			background-color: var(--color-background);
+
+		}
     	h2 {
     		flex: 1;
     	}
