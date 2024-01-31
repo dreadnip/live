@@ -161,6 +161,10 @@ blockquote:after {
         font-size: 1.5rem;
         padding: 1rem;
     }
+    
+    .flex {
+        flex-direction: column;
+    }
 }
 
 @media(max-width:40rem) {
