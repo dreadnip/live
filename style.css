@@ -57,10 +57,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
-/*
- * Images
- */
-
 img {
     max-width: 100%;
     object-fit: contain;
@@ -79,19 +75,14 @@ figcaption {
     display: inline-block;
 }
 
-.combo {
-    display: flex;
-    flex-direction: row;
+p {
+    max-width: 40rem;
 }
 
 p > img {
     max-width: 20rem;
     float: right;
 }
-
-/*
- * Basics
- */
 
 a {
     color: var(--color-text)
@@ -103,7 +94,7 @@ a:hover {
 
 p > a {
     text-decoration: none;
-    background-color: var(--color-accent);
+    border-bottom: solid 6px var(--color-accent);
 }
 
 ul {
@@ -114,34 +105,17 @@ ul > li + li {
     margin-top: .2rem;
 }
 
-/*
- * Layout
- */
-
-header {
-    margin-bottom: var(--breathe);
-}
-
-main > * + * {
+.flow > * + * {
     margin-top: var(--breathe);
 }
 
-.home {
+.flex {
     display: flex;
+    gap: var(--breathe);
 }
 
-.home > ul {
-    width: 50%;
-}
-
-.home > aside {
-    display: block;
-    margin: 0;
-    width: 50%;
-}
-
-aside > picture {
-    margin: 0;
+.push {
+    margin-left: auto;
 }
 
 /*
@@ -183,7 +157,6 @@ blockquote:after {
  */
 
 @media(max-width:80rem) {
-
     body {
         font-size: 1.5rem;
         padding: 1rem;
@@ -191,26 +164,8 @@ blockquote:after {
 }
 
 @media(max-width:40rem) {
-
     body {
         font-size: 1.25rem;
         padding: 1rem;
-    }
-
-    main > * + * {
-        margin-top: 1rem;
-    }
-
-    .home {
-        flex-direction: column;
-    }
-
-    .home > ul {
-        width: 100%;
-    }
-
-    .home > aside {
-        margin-top: var(--breathe);
-        width: 100%;
     }
 }

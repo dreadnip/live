@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>sluggish, lazy, stupid and unconcerned</title>
+    <meta name="description" content="my homepage on the world wide web">
+    <meta name="author" content="sander">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body class="flow">
+    <h1>Technology I'm building with right now</h1>
+    <p>2023 was an interesting year for web dev. Starting 2024, this is the tech stack that I'm using to build my apps</p>
+    <h2>Dropping JS & CSS build steps</h2>
+    <p>Honestly, I never cared for the build step. It always seemed like a thick layer of complexity for some small upside</p>
+    <p>But vanilla CSS has been improving, browser support is great for all modern features, and we have importmaps now for JS, so <a href="https://world.hey.com/dhh/you-can-t-get-faster-than-no-build-7a44131c">some people are calling for the end of build steps</a>.</p>
+    <p>When it comes to structuring CSS, I like to follow Andy Bell (<a href="https://piccalil.li/">https://piccalil.li/</a> and <a href="https://buildexcellentwebsit.es">https://buildexcellentwebsit.es</a>) who has some great ideas and insight when it comes to CSS.</p>
+    <h2>Htmx</h2>
+    <p>Brilliant little framework/tool for anyone who hates writing Javascript. Jokes aside, by placing a couple of extra attributes in your HTML you can entirely drop all boilerplate code that handles clicking on elements, getting some data, sending it to the server, getting something back and updating something in the DOM based on that data. So like 80% of your application's JS.</p>
+    <p>Been playing with it for a while and haven't found its limits yet, so very promising.</p>
+    <hr>
+    <h2>SQLite</h2>
+    <p>It's fast, it's ACID compliant, the new wal2 mode is great. Yes, you can use it in production. The backups are dead simple, just rsync the files. Don't use it when you have to shard or support 10000 concurrent writers. Other than that, it's the GOAT.</p>
+    <hr>
+    <h2>Self written PHP framework</h2>
+    <p>It's tiny, it's a single file, it has routing, templating, DI container and PSR-7 support. It's good enough for small apps: <a href="https://github.com/sanderdlm/mono">https://github.com/sanderdlm/mono</a></p>
+    <p>I use Doctrine DBAL to interact with my SQLite db, I avoid the ORM if I can. If I need auth I'll use the oauth2 bundle from thephpleague.</p>
+    <hr>
+    <h2>Cloudflare</h2>
+    <p>Unbeatable free tier. Great domain registrar and DNS host. Free email forwarding. DDos protection too. Just works, and doesn't bother you.</p>
+    <hr>
+    <h2>DigitalOcean</h2>
+    <p>AWS has managed to make their interface/system so complex, they need a ChatGPT wrapper to explain to you how to perform basic tasks. Absolutely vile product.</p>
+    <p>DO seems to tick the same boxes for me, without being repulsed when using it. It probably doesn't scale as well, but it's fine for my baby apps.</p>
+</body>
+</html>
