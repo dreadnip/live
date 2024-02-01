@@ -36,7 +36,7 @@
     --breathe: 2rem;
     --font-size: 2rem;
     --font-size-small: 1rem;
-    --border-width: .4rem;
+    --border-width: .3rem;
 }
 
 /*
@@ -88,6 +88,7 @@ p > img {
 a {
     color: var(--color-text);
     text-decoration: none;
+    border-top: solid var(--border-width) var(--color-background);
     border-bottom: solid var(--border-width) var(--color-accent);
 }
 
