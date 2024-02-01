@@ -94,6 +94,7 @@ a {
 a:hover {
     transition: 200ms;
     background-color: var(--color-accent);
+    border-top: solid var(--border-width) var(--color-accent);
 }
 
 ul {
