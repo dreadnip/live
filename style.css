@@ -88,14 +88,12 @@ p > img {
 a {
     color: var(--color-text);
     text-decoration: none;
-    border-top: solid var(--border-width) var(--color-background);
     border-bottom: solid var(--border-width) var(--color-accent);
 }
 
 a:hover {
     transition: 200ms;
     background-color: var(--color-accent);
-    border-top: solid var(--border-width) var(--color-accent);
 }
 
 ul {
