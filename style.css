@@ -104,6 +104,12 @@ ol {
     margin-left: var(--breathe);
 }
 
+hr {
+    border-top: dashed var(--border-width) var(--color-accent);
+    border-bottom: none;
+    max-width: 50%
+}
+
 .flow > * + * {
     margin-top: var(--breathe);
 }
