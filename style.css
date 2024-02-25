@@ -107,8 +107,17 @@ ul li + li {
     margin-top: .5rem;
 }
 
+li > ul {
+    margin: 1rem 0;
+}
+
 .list-circle {
     list-style: circle;
+    padding-left: 1rem;
+}
+
+.list-square {
+    list-style: square;
     padding-left: 1rem;
 }
 
