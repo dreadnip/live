@@ -15,8 +15,12 @@
 
 :root {
     --mine-shaft: #212121;
-    --mercury: #e8e8e8;
-    --tundora: #999;
+    --storm-cloud: #484848;
+    --grey: #6f6f6f;
+    --tundora: #979797;
+    --mercury: #e5e5e5;
+    --eggshell: #efefef;
+    --concrete: #fafafa;
     --turbo: #fff000;
     --blue: #0000ff;
     --mariner: #3A97D4;
@@ -24,7 +28,6 @@
     --mojo: #C44B34;
     --rajah: #F7CE74;
     --zest: #9C83D4;
-    --concrete: #fafafa;
     --tan-hide: #FD9C51;
     --pastel-green: #7BE076;
     --lime-pie: #BFD630;
@@ -153,7 +156,7 @@ blockquote:after {
 }
 
 .code-example {
-    background-color: var(--mercury);
+    background-color: var(--eggshell);
     padding: 2rem;
     border-radius: 10px;
     overflow-x: auto;
@@ -170,7 +173,8 @@ p > code {
 
 .meta {
     font-size: var(--font-size-small);
-    color: var(--tundora);
+    color: var(--grey);
+    font-style: italic;
 }
 
 /*
