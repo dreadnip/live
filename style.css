@@ -99,6 +99,10 @@ ul {
     list-style: none;
 }
 
+ul li + li {
+    margin-top: .5rem;
+}
+
 .list-circle {
     list-style: circle;
     padding-left: 1rem;
