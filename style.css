@@ -34,7 +34,7 @@
     --color-accent: var(--lime-pie);
 
     --breathe: 2rem;
-    --font-size: 2rem;
+    --font-size: 1.6rem;
     --font-size-small: 1rem;
     --border-width: .3rem;
 }
@@ -51,7 +51,6 @@ body {
     line-height: 1.5;
     padding: 3rem;
     background-color: var(--color-background);
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,8 +67,8 @@ figure, picture {
     display: block;
     position: relative;
     margin: 1rem 0;
+    max-width: 40rem;
 }
-
 
 figcaption {
     padding: 1rem 0;
@@ -98,6 +97,11 @@ a:hover {
 
 ul {
     list-style: none;
+}
+
+.list-circle {
+    list-style: circle;
+    padding-left: 1rem;
 }
 
 ol {
@@ -142,6 +146,27 @@ blockquote:before {
 
 blockquote:after {
     content: close-quote;
+}
+
+.code-example {
+    background-color: var(--mercury);
+    padding: 2rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: .9rem;
+    max-width: 40rem;
+}
+
+p > code {
+    background-color: var(--mercury);
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.meta {
+    font-size: var(--font-size-small);
+    color: var(--tundora);
 }
 
 /*
